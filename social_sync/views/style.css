@@ -1,0 +1,228 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    color: #A53860;
+    color: #FFEEDB;
+}
+/* Body and General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #A53860; /* Background color set to pink */
+    color: #FFEEDB; /* Text color */
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #A53860; /* Darker accent color */
+    color: #FFEEDB; /* Text color */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navbar Styles */
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #4C3B4D; /* Sidebar background color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size:x-large;
+}
+
+nav h1 {
+    font-size: 100px;
+    font-weight: 600;
+    color: #FFEEDB;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav a {
+    color: #FFEEDB;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #93dcd5; /* Lighter highlight color */
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 270px; /* To accommodate the sidebar */
+    padding: 30px;
+    background-color: #A53860; /* Background color set to pink */
+    color: #4C3B4D;
+    min-height: 100vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.main-content:hover {
+    transform: translateY(-5px);
+}
+
+/* File Upload Form Styles */
+form {
+    color: #A53860;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    color: #FFEEDB;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-control, .form-control-file, textarea {
+    padding: 12px;
+    border: 1px solid #CCC9A1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus, textarea:focus {
+    border-color: #A53860;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    background-color: #d81560;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #17cdc1;
+    transform: scale(1.05);
+}
+
+/* Media Display Styles */
+.media-item {
+    background: #FFFFFF;
+    border: 1px solid #CCC9A1;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.media-item img, .media-item video {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.media-item p {
+    color: #254441;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #A53860;
+    color: #FFEEDB;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+}
+
+footer p {
+    background-color: #A53860;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Calendar Styles */
+#calendar {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav h1 {
+        text-align: left;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

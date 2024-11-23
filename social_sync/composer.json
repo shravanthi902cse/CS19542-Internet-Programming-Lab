@@ -1,0 +1,14 @@
+{
+    "name": "lenovo/social_sync",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "shravanthi902cse",
+            "email": "220701902@rajalakshmi.edu.in"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.0",
+        "jstolpe/instagram-graph-api-php-sdk": "^1.0"
+    }
+}
